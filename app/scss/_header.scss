@@ -1,7 +1,7 @@
 .header {
 
     nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
     }
 
     &__logo {
@@ -28,13 +28,26 @@
     }
 
     &__links {
+        border: 1px solid red;
 
         a {
+            position: relative;
             font-size: $font-sm;
             color: $grayishBlue;
+            transition: color 200ms ease-in-out;
 
             &:not(:last-child){
                 margin-right: 32px;
+            }
+            
+            &::before {
+                content: "";
+                display: block;
+                height: 5px;
+                background: lime;
+                left: 0;
+                right: 0;
+                bottom: -30px;
             }
 
             &:hover {
