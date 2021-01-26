@@ -43,6 +43,7 @@
             &::before {
                 content: "";
                 display: block;
+                position: absolute;
                 height: 5px;
                 background: lime;
                 left: 0;
